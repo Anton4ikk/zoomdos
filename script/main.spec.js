@@ -1,5 +1,5 @@
 const { test, chromium } = require('@playwright/test');
-const { users, zoomLink, zoomDuration } = require('../config/index');
+const { users, zoomLink, entranceDuration } = require('../config/index');
 
 for (let user of users) {
   test(`Enter zoom meeting by ${user}`, async () => {
@@ -24,8 +24,7 @@ for (let user of users) {
     }
     await page.getByRole('button', { name: 'Join from your browser' }).click();
 
-    // await page.waitForTimeout(Math.floor(Math.random() * 180) * 1000);
-    await page.waitForTimeout(Math.floor(Math.random() * 20) * 1000);
+    await page.waitForTimeout(Math.floor(Math.random() * (entranceDuration * 60)) * 1000);
     page = browserContext.pages()[0];
     await page.goto(page.url(), { waitUntil: "commit" });
 

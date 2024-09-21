@@ -1,10 +1,11 @@
-const zoomLink = 'https://us05web.zoom.us/j/89308128383?pwd=cK';
+const zoomLink = 'https://us06web.zoom.us/j/86197095889?pwd=4ah';
 
-const zoomDuration = 0.5 * 60;
+const zoomDuration = 3 * 60;
+const entranceDuration = 1;
 
 const users = [
     'Андрей',
-    'Мария Амелина',
+    'Амелина Мария',
     'Оксана П.',
     'Юлия Купчинская',
     'Вербицкий Женя',
@@ -37,4 +38,4 @@ const users = [
 //     'Райан Гослинг',
 // ];
 
-module.exports = { users, zoomLink, zoomDuration };
+module.exports = { users, zoomLink, zoomDuration, entranceDuration };
