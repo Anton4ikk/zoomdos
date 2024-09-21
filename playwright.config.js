@@ -1,12 +1,12 @@
 const { defineConfig, devices } = require('@playwright/test');
-const { zoomDuration } = require('./config/index');
+const { users, zoomDuration } = require('./config/index');
 
 module.exports = defineConfig({
   testDir: './script',
-  fullyParallel: false,
+  fullyParallel: true,
   forbidOnly: false,
   retries: 0,
-  workers: 1,
+  workers: users.length,
   timeout: zoomDuration * 1.2 * 60 * 1000,
   reporter: 'line',
   use: {
