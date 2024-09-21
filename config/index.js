@@ -1,4 +1,4 @@
-const zoomLink = 'https://us05web.zoom.us/j/89308128383?pwd=cKpowSbCdafWlyeont7o63e6wMGxDz.1';
+const zoomLink = 'https://us05web.zoom.us/j/89308128383?pwd=cK';
 
 const zoomDuration = 0.5 * 60;
 
