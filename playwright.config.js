@@ -7,7 +7,7 @@ module.exports = defineConfig({
   forbidOnly: false,
   retries: 0,
   workers: users.length,
-  timeout: zoomDuration * 1.2 * 60 * 1000,
+  timeout: zoomDuration * 1.3 * 60 * 1000,
   reporter: 'line',
   use: {
     actionTimeout: 30 * 1000,
